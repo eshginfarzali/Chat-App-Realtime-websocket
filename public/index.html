@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EF Chat App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js" integrity="sha512-Z6C1p1NIexPj5MsVUunW4pg7uMX6/TT3CUVldmjXx2kpip1eZcrAnxIusDxyFIikyM9A61zOVNgvLr/TGudOQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <section id="chat-wrap">
+    <h2>EF Chat App</h2>
+    <div id="chat-window">
+        <div id="output"> </div>
+        <!-- broadcast -->
+        <div id="feedback"></div>
+    </div>
+    <input type="text" id="sender" placeholder="Name">
+    <input type="text" id="message" placeholder="Message">
+    <button id="submitBtn">Send</button>
+</section>
+    <script src="./chat.js" charset="UTF-8"></script>
+</body>
+</html>
